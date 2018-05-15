@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "base/base.html" %}
+{% load my_extras %}
+  {% block body_block %}
+    <!-- <h1>This is working!</h1> -->
+    <h1>Welcome to index <br> {{ text }}</h1>
+    <h2>{{ text|leikkaa:'hello' }}</h2>
+    <h3>{{ number|add:"99" }}</h3>
+    {% endblock %}
